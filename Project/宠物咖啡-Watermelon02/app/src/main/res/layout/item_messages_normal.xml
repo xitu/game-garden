@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/store_my_stamp_number"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:id="@+id/item_messages_normal_sender"
+                    android:layout_width="340dp"
+                    android:layout_height="30dp"
+                    android:textSize="15dp" />
+                <TextView
+                    android:gravity="right"
+                    android:text="..."
+                    android:textSize="30dp"
+                    android:textColor="#3F51B5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:fontFamily="@font/store_my_stamp_number"
+                android:id="@+id/item_messages_normal_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="40dp" />
+
+
+            <TextView
+                android:id="@+id/item_messages_normal_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/store_my_stamp_number"
+                android:textSize="20dp" />
+            
+            <LinearLayout
+                android:layoutDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_share"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"/>
+                <ImageView
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_comment"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"/>
+                <ImageView
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_zan"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

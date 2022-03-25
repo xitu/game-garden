@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="coffeeShop"
+            type="com.example.petscoffee.bean.CoffeeShop" />
+        <variable
+            name="bottomBarListener"
+            type="com.example.petscoffee.listener.BottomBarListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.activities.ShopActivity">
+
+        <include layout="@layout/header_toolbar"
+            android:id="@+id/shop_header"
+            app:coffeeShop = "@{coffeeShop}"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/shop_choose_goods"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/store_my_stamp_number"
+                android:text="Goods" />
+
+            <Button
+                android:id="@+id/shop_choose_pets"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/store_my_stamp_number"
+                android:text="Pets" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/shop_goods_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <fragment
+                    android:id="@+id/shop_activity_goods_fragment"
+                    android:name="com.example.petscoffee.ui.fragments.ShopGoodsFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shop_pets_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <fragment
+                    android:id="@+id/shop_activity_pets_fragment"
+                    android:name="com.example.petscoffee.ui.fragments.ShopPetsFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/bottom_toolbar"
+            app:bottomBarListener="@{bottomBarListener}"/>
+    </LinearLayout>
+</layout>

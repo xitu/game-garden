@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shop_pets_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shop_cat_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <com.example.petscoffee.customview.PetView
+                    android:id="@+id/shop_cat_image"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="120dp"
+                    android:src="@drawable/cat" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="100dp">
+                    <TextView
+                        android:id="@+id/shop_cat_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/store_my_stamp_number"
+                        android:textSize="30dp"
+                        android:text="Cat" />
+
+                    <TextView
+                        android:id="@+id/shop_cat_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="20dp"
+                            android:text="更多猫猫，更多钱钱" />
+
+                    <TextView
+                        android:id="@+id/shop_cat_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/store_my_stamp_number"
+                        android:text="$:2000" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shop_dog_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <com.example.petscoffee.customview.PetView
+                    android:id="@+id/shop_dog_image"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/dog" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="100dp">
+                    <TextView
+                        android:id="@+id/shop_dog_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/store_my_stamp_number"
+                        android:textSize="30dp"
+                        android:text="Dog" />
+
+                    <TextView
+                        android:id="@+id/shop_dog_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="20dp"
+                        android:text="更多狗狗，更多钱钱" />
+
+                    <TextView
+                        android:id="@+id/shop_dog_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/store_my_stamp_number"
+                        android:text="$:2000" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>

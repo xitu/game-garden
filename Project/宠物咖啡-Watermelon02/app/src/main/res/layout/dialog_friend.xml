@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/dialog_friend_userImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_user"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/dialog_friend_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="150dp"
+                    android:fontFamily="@font/store_my_stamp_number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/dialog_friend_userImage"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/dialog_friend_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="150dp"
+                    android:fontFamily="@font/store_my_stamp_number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/dialog_friend_userImage"
+                    app:layout_constraintTop_toBottomOf="@+id/dialog_friend_name" />
+
+                <TextView
+                    android:id="@+id/dialog_friend_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="150dp"
+                    android:fontFamily="@font/store_my_stamp_number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/dialog_friend_userImage"
+                    app:layout_constraintTop_toBottomOf="@+id/dialog_friend_day" />
+
+                <TextView
+                    android:id="@+id/dialog_friend_friendsNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="150dp"
+                    android:fontFamily="@font/store_my_stamp_number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/dialog_friend_userImage"
+                    app:layout_constraintTop_toBottomOf="@+id/dialog_friend_money" />
+
+                <LinearLayout
+                    android:id="@+id/dialog_friend_pets"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="150dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="@id/dialog_friend_userImage"
+                    app:layout_constraintTop_toBottomOf="@+id/dialog_friend_friendsNumber">
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/dialog_friend_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="128dp"
+                    android:src="@drawable/ic_add_friend"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dialog_friend_pets" />
+
+                <ImageView
+                    android:id="@+id/dialog_friend_visit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="128dp"
+                    android:src="@drawable/ic_visit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dialog_friend_pets" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</layout>

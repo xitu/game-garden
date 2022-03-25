@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/dialog_pets_eat_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_gravity="bottom"
+        android:inputType="number"
+        android:id="@+id/dialog_pets_eat_edit"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        />
+    <Button
+        android:id="@+id/dialog_pets_eat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="喂"/>
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="pet"
+            type="com.example.petscoffee.bean.pets.Pets" />
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pets_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/store_my_stamp_number"
+            android:gravity="center"
+            android:text="@{pet.name}"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="360dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:layout_margin="6dp"
+            android:background="#3F51B5" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:background="@drawable/eat"
+                android:id="@+id/pets_button_eat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cornerRadius="15dp"
+                android:alpha="0"
+                android:scaleX="0"
+                android:scaleY="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.example.petscoffee.customview.PetView
+                android:id="@+id/pets_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pets_button_wash"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/wash"
+                app:cornerRadius="15dp"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:alpha="0"
+                android:fontFamily="@font/store_my_stamp_number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <com.example.petscoffee.customview.BloodBar
+            android:id="@+id/pets_hp"
+            android:layout_width="240dp"
+            android:layout_height="20dp"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="60dp"/>
+
+        <LinearLayout
+            android:id="@+id/pets_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#F3F3F3">
+
+            <TextView
+                android:id="@+id/pets_hunger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/store_my_stamp_number"
+                android:textSize="30sp"
+                android:text="@{@string/item_pets_hunger+pet.hunger}"/>
+
+            <TextView
+                android:id="@+id/pets_cleanliness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/store_my_stamp_number"
+                android:textSize="30sp"
+                android:text="@{@string/item_pets_clean+pet.cleanliness}"/>
+
+            <TextView
+                android:id="@+id/pets_mood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/store_my_stamp_number"
+                android:textSize="30sp"
+                android:text="@{@string/item_pets_mood+pet.mood}"/>
+
+            <TextView
+                android:id="@+id/pets_loveliness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/store_my_stamp_number"
+                android:textSize="30sp"
+                android:text="@{@string/item_pets_love+pet.mood}"/>
+
+            <TextView
+                android:id="@+id/pets_sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/store_my_stamp_number"
+                android:textSize="30sp"
+                android:text="@{@string/item_pets_spec+pet.sp}"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>
