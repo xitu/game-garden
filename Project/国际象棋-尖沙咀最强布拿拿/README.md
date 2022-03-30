@@ -15,7 +15,7 @@
 
 [体验地址](https://chess.evilbanana.workers.dev/)
 
-![Demo](./images/screenshot.png?raw=true "Demo")
+![Demo](../images/screenshot.png?raw=true "Demo")
 
 ## 项目实践细节
 
