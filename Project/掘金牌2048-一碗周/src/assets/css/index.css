@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .grid-item {
+    @apply rounded-lg w-full h-full bg-[#B0CAED];
+  }
+  .user-drag {
+    -webkit-user-drag: none;
+  }
+}
