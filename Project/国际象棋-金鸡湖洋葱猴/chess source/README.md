@@ -1,13 +1,16 @@
-# Chess
+# Juejin Chess
 
-## Description
+## 项目介绍
 
 A Chess Board Application.
 
-## Demo
+## 快速体验
 
 [Cloudflare Workers](https://chess.evilbanana.workers.dev/)
 
+## 项目实现思路以及细节
+
+[掘金专栏-如何写一个国际象棋的游戏](https://juejin.cn/column/7080521791587745829)
 ## Screenshots
 
 ![Screenshot1](./screenshots/screenshot_1%402x.png?raw=true "1")
