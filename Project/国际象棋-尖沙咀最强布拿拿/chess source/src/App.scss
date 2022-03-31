@@ -1,0 +1,11 @@
+@import 'papercss';
+.gap {
+    margin-left: 8px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
