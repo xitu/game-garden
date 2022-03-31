@@ -1,1 +1,13 @@
 .DS_Store
+
+# Visual Studio cache directory
+.vs/
+
+# Gradle cache directory
+.gradle/
+
+.vscode/
+
+.husky/
+
+.idea/
