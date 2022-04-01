@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1175925925925926" />
+        <entry key="app/src/main/res/drawable/animated_vector_window.xml" value="0.17314814814814813" />
+        <entry key="app/src/main/res/drawable/ic_add_friend.xml" value="0.16203703703703703" />
+        <entry key="app/src/main/res/drawable/ic_bag.xml" value="0.1111111111111111" />
+        <entry key="app/src/main/res/drawable/ic_bar_counter.xml" value="0.4837010334887479" />
+        <entry key="app/src/main/res/drawable/ic_baseline_access_time_48.xml" value="0.13645833333333332" />
+        <entry key="app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.12962962962962962" />
+        <entry key="app/src/main/res/drawable/ic_baseline_bag_36.xml" value="0.13645833333333332" />
+        <entry key="app/src/main/res/drawable/ic_baseline_money_48.xml" value="0.13645833333333332" />
+        <entry key="app/src/main/res/drawable/ic_baseline_pets_36.xml" value="0.13645833333333332" />
+        <entry key="app/src/main/res/drawable/ic_baseline_shopping_shop_36.xml" value="0.1175925925925926" />
+        <entry key="app/src/main/res/drawable/ic_baseline_supervised_user_circle_36.xml" value="0.1175925925925926" />
+        <entry key="app/src/main/res/drawable/ic_baseline_vpn_key_24.xml" value="0.12962962962962962" />
+        <entry key="app/src/main/res/drawable/ic_baseline_work_36.xml" value="0.1175925925925926" />
+        <entry key="app/src/main/res/drawable/ic_comment.xml" value="0.1648148148148148" />
+        <entry key="app/src/main/res/drawable/ic_lamp.xml" value="0.18645833333333334" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1175925925925926" />
+        <entry key="app/src/main/res/drawable/ic_name.xml" value="0.1648148148148148" />
+        <entry key="app/src/main/res/drawable/ic_pets.xml" value="0.1111111111111111" />
+        <entry key="app/src/main/res/drawable/ic_share.xml" value="0.1648148148148148" />
+        <entry key="app/src/main/res/drawable/ic_shop.xml" value="0.1111111111111111" />
+        <entry key="app/src/main/res/drawable/ic_user.xml" value="0.1111111111111111" />
+        <entry key="app/src/main/res/drawable/ic_visit.xml" value="0.16203703703703703" />
+        <entry key="app/src/main/res/drawable/ic_window.xml" value="0.30537161840293314" />
+        <entry key="app/src/main/res/drawable/ic_work.xml" value="0.1111111111111111" />
+        <entry key="app/src/main/res/drawable/ic_write.xml" value="0.1648148148148148" />
+        <entry key="app/src/main/res/drawable/ic_zan.xml" value="0.1648148148148148" />
+        <entry key="app/src/main/res/layout/activity_bag.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_base.xml" value="0.15364583333333334" />
+        <entry key="app/src/main/res/layout/activity_coffee_shop.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_first.xml" value="0.11817125145292522" />
+        <entry key="app/src/main/res/layout/activity_friends.xml" value="0.13354851863045575" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22830188679245284" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.17486710045889078" />
+        <entry key="app/src/main/res/layout/activity_messgae.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_pets.xml" value="0.1203125" />
+        <entry key="app/src/main/res/layout/activity_picture.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_shop.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_test.xml" value="0.1203125" />
+        <entry key="app/src/main/res/layout/activity_visit.xml" value="0.16394927536231885" />
+        <entry key="app/src/main/res/layout/activity_work.xml" value="0.1171875" />
+        <entry key="app/src/main/res/layout/bottom_toolbar.xml" value="0.21943048576214405" />
+        <entry key="app/src/main/res/layout/bottombar.xml" value="0.15364583333333334" />
+        <entry key="app/src/main/res/layout/content_login.xml" value="0.2132435465768799" />
+        <entry key="app/src/main/res/layout/dialog_friend.xml" value="0.1765625" />
+        <entry key="app/src/main/res/layout/dialog_login_register.xml" value="0.24898435544957315" />
+        <entry key="app/src/main/res/layout/dialog_pets_eat.xml" value="0.15364583333333334" />
+        <entry key="app/src/main/res/layout/dialog_pets_wash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/eat.xml" value="0.1203125" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1203125" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1203125" />
+        <entry key="app/src/main/res/layout/fragment_login_register.xml" value="0.1203125" />
+        <entry key="app/src/main/res/layout/fragment_login_register_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_shop_goods.xml" value="0.13541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_shop_pets.xml" value="0.23174603174603176" />
+        <entry key="app/src/main/res/layout/header_toolbar.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/input.xml" value="0.1203125" />
+        <entry key="app/src/main/res/layout/item_friend.xml" value="0.19972826086956522" />
+        <entry key="app/src/main/res/layout/item_goods.xml" value="0.15364583333333334" />
+        <entry key="app/src/main/res/layout/item_message.xml" value="0.14635416666666667" />
+        <entry key="app/src/main/res/layout/item_messages_footer.xml" value="0.17980072463768115" />
+        <entry key="app/src/main/res/layout/item_messages_normal.xml" value="0.17980072463768115" />
+        <entry key="app/src/main/res/layout/item_msg_left.xml" value="0.14635416666666667" />
+        <entry key="app/src/main/res/layout/item_msg_right.xml" value="0.14635416666666667" />
+        <entry key="app/src/main/res/layout/item_pets.xml" value="0.151268115942029" />
+        <entry key="app/src/main/res/layout/item_shop.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/mtoolbar.xml" value="0.15364583333333334" />
+        <entry key="app/src/main/res/layout/refresh_header.xml" value="0.18931159420289856" />
+        <entry key="app/src/main/res/layout/sample_my_view.xml" value="0.16875" />
+        <entry key="app/src/main/res/layout/shop_fragment_input.xml" value="0.13177083333333334" />
+        <entry key="app/src/main/res/layout/shop_fragment_name_input.xml" value="0.15364583333333334" />
+        <entry key="app/src/main/res/layout/shop_fragment_number_input.xml" value="0.1328125" />
+        <entry key="app/src/main/res/layout/shop_pets_fragment.xml" value="0.1203125" />
+        <entry key="app/src/main/res/layout/shopping_success.xml" value="0.16875" />
+        <entry key="app/src/main/res/layout/test.xml" value="0.17481884057971014" />
+        <entry key="app/src/main/res/layout/user_nav_header.xml" value="0.25630252100840334" />
+        <entry key="app/src/main/res/layout/wash.xml" value="0.1203125" />
+        <entry key="app/src/main/res/menu/user_menu.xml" value="0.23802083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

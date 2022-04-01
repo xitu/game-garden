@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+        <variable
+            name="coffeeShop"
+            type="com.example.petscoffee.bean.CoffeeShop" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F8F8"
+        android:orientation="vertical"
+        tools:context=".ui.activities.MessagesActivity">
+        <LinearLayout
+            app:layout_behavior=".customview.behavior.TitleBehavior"
+            android:orientation="vertical"
+            android:id="@+id/activity_message_appBarLayout"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                style="@style/mToolbar"
+                android:background="#F8F8F8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/headerBar_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_access_time_48"
+                        android:fontFamily="@font/store_my_stamp_number"
+                        android:gravity="center_horizontal"
+                        android:text="@{coffeeShop.showTime()}"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/headerBar_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/store_my_stamp_number"
+                        android:drawableLeft="@drawable/ic_baseline_money_48"
+                        android:gravity="center_horizontal"
+                        android:text="@{String.valueOf(coffeeShop.money)}"
+                        android:textSize="30sp" />
+                    <View
+                        android:layout_marginTop="25dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/white"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.appcompat.widget.Toolbar
+                android:background="#F8F8F8"
+                style="@style/mToolbar"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:background="#F8F8F8"
+                    android:textSize="30dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/store_my_stamp_number"
+                    android:textColor="#3F51B5"
+                    android:text="@{coffeeShop.name+@string/item_message_name}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </androidx.appcompat.widget.Toolbar>
+        </LinearLayout>
+
+        <com.example.petscoffee.customview.viewGroup.MyRefreshLayout
+            android:id="@+id/activity_message_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior=".customview.behavior.RefreshBehavior">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.example.petscoffee.customview.PetView
+                    android:src="@drawable/cat"
+                    android:id="@+id/activity_message_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="visible"/>
+
+                <com.example.petscoffee.customview.DirectionView
+                    android:layout_gravity="right|center_vertical"
+                    android:id="@+id/activity_message_float"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:alpha="0.9"
+                    android:elevation="10000dp"
+                    android:src="@drawable/ic_write"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/activity_message_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+        </com.example.petscoffee.customview.viewGroup.MyRefreshLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

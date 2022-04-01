@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="bottomBarListener"
+            type="com.example.petscoffee.listener.BottomBarListener" />
+    </data>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bottomBar"
+        style="@style/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/bottomBar_bag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_bag"
+                android:onClick="@{bottomBarListener.onClick}"
+                app:layout_constraintBaseline_toBaselineOf="@+id/mainPage_pets"
+                app:layout_constraintEnd_toStartOf="@+id/mainPage_pets"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="#f0f0f0"/>
+
+
+            <ImageView
+                android:id="@+id/bottomBar_shop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_shop"
+                android:onClick="@{bottomBarListener.onClick}"
+                app:layout_constraintBaseline_toBaselineOf="@+id/mainPage_wash"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/mainPage_wash" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="-30dp"
+                android:layout_gravity="center"
+                android:background="#f0f0f0"/>
+
+            <com.example.petscoffee.customview.WorkView
+                android:id="@+id/bottomBar_work"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_work"
+                app:layout_constraintBottom_toBottomOf="@+id/mainPage_pets"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="-30dp"
+                android:layout_gravity="center"
+                android:background="#f0f0f0"/>
+
+            <ImageView
+                android:id="@+id/bottomBar_pets"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pets"
+                android:onClick="@{bottomBarListener.onClick}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/mainPage_work" />
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="#f0f0f0"/>
+
+            <ImageView
+                android:id="@+id/bottomBar_friend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_user"
+                android:onClick="@{bottomBarListener.onClick}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mainPage_work" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</layout>

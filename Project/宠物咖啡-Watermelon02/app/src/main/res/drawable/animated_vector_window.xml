@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_window">
+    <target
+        android:animation="@animator/anim_window3"
+        android:name="window3"/>
+    <target
+        android:animation="@animator/anim_window1"
+        android:name="window1"/>
+    <target
+        android:animation="@animator/anim_window5"
+        android:name="window5"/>
+    <target
+        android:animation="@animator/anim_window6"
+        android:name="window6"/>
+    <target
+        android:animation="@animator/anim_window2"
+        android:name="window2"/>
+    <target
+        android:animation="@animator/anim_line1"
+        android:name="window_line"/>
+    <target
+        android:animation="@animator/anim_line3"
+        android:name="lineC1"/>
+    <target
+        android:animation="@animator/anim_line1"
+        android:name="lineC3"/>
+    <target
+        android:animation="@animator/anim_line2"
+        android:name="lineL1"/>
+    <target
+        android:animation="@animator/anim_line2"
+        android:name="lineL2"/>
+
+</animated-vector>
