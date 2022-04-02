@@ -19,7 +19,7 @@
 
 **线上试玩：**
 
-[点击直达](http://1.117.169.77/tanksbattle/index.html)
+[点击直达](http://1.117.169.77/tanksbattle/index.html)（第一次需加载的资源比较大，时间较长，后续就会很快了。）
 
 ---
 
