@@ -1,0 +1,1 @@
+<view class="content"><text>选择难度</text><navigator class="title" url="/pages/play/play?degree=0">入门</navigator><navigator class="title" url="/pages/play/play?degree=1">简单</navigator><navigator class="title" url="/pages/play/play?degree=2">一般</navigator></view>
