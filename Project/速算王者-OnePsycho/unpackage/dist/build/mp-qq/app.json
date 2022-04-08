@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/main/home",
+    "pages/entry/home",
+    "pages/answer/home"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0081ff",
+    "navigationBarTitleText": "人生答案之书",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "base-main": "/pages/main/home",
+    "cu-custom": "/colorui/components/cu-custom"
+  }
+}

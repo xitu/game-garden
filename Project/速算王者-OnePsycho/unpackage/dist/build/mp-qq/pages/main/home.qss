@@ -1,0 +1,29 @@
+.page {
+    height: 100vh;
+    padding-bottom: 150rpx;
+    background: #1e1a19;
+}
+.page .bg-light {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+}
+.page .bg-book {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    z-index: 2;
+}
+.page .btn-box {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    width: 70%;
+    z-index: 2;
+}
+
+.page .btn-box image{
+    width:100%;
+}
