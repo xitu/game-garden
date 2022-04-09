@@ -1,0 +1,38 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      strict: false
+      datasource:
+        master:
+          url: jdbc:mysql://122.112.181.245:3306/gobang?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone =Asia/Shanghai
+          username: root
+          password: 123456
+      hikari:
+        max-lifetime: 1800000
+        connection-timeout: 5000
+        idle-timeout: 3600000
+        max-pool-size: 12
+        min-idle: 4
+        connection-test-query: /**ping*/
+  redis:
+    host: 122.112.181.245
+    port: 6379
+    timeout: 30000
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: 1ms
+        min-idle: 0
+    password: heikeshizhenqian
+# 请求白名单
+filter:
+    white-list: /user/login,/user/register,/websocket/server/,/integral/pageList
+#输出sql日志到文件
+logging:
+  level:
+    com.wjbgn.gobang.server.user.mapper: debug
+
