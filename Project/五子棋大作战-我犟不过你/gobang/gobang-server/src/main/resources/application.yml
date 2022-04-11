@@ -7,9 +7,9 @@ spring:
       strict: false
       datasource:
         master:
-          url: jdbc:mysql://122.112.181.245:3306/gobang?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone =Asia/Shanghai
-          username: root
-          password: 123456
+          url: jdbc:mysql://XXXXXXXXXX:3306/gobang?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone =Asia/Shanghai
+          username: XXXXXXXX
+          password: XXXXXXXX
       hikari:
         max-lifetime: 1800000
         connection-timeout: 5000
@@ -18,7 +18,7 @@ spring:
         min-idle: 4
         connection-test-query: /**ping*/
   redis:
-    host: 122.112.181.245
+    host: XXXXXXXXXXX
     port: 6379
     timeout: 30000
     lettuce:
@@ -27,7 +27,7 @@ spring:
         max-idle: 8
         max-wait: 1ms
         min-idle: 0
-    password: heikeshizhenqian
+    password: XXXXXXXX
 # 请求白名单
 filter:
     white-list: /user/login,/user/register,/websocket/server/,/integral/pageList
