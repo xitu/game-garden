@@ -1,0 +1,5 @@
+
+sql:insert into score_table set ?;params:{"username":"jyeontu","juejinpage":"https://juejin.cn/user/440244290727294","score":"00:00:02"}; 2022-04-13 00:53:21
+sql:insert into score_table set ?;params:{"username":"jyeontu","juejinpage":"https://juejin.cn/user/440244290727294","score":"00:00:02","submittime":"2022-04-13 01:30:02"}; 2022-04-13 01:30:03
+sql:insert into score_table set ?;params:{"username":"jyeontu","juejinpage":"https://juejin.cn/user/440244290727294","score":"00:00:05","submittime":"2022-04-13 01:30:10"}; 2022-04-13 01:30:11
+sql:insert into score_table set ?;params:{"username":"jyeontu","juejinpage":"https://juejin.cn/user/440244290727294","score":"00:00:07","submittime":"2022-04-13 01:30:21"}; 2022-04-13 01:30:21
