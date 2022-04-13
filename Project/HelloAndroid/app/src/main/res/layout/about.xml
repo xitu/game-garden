@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="15sp"
+    android:background="@drawable/game_bg">
+
+        <LinearLayout 
+      	android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+        >
+        	<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="@dimen/sp_20"
+		    android:textColor="#fff"
+		    android:layout_gravity="center"
+		    android:text="关于我们"/>
+        	<TextView 
+		    android:id="@+id/tv"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="\n游戏名称：兵将棋\n版本序号：Version 1.0\n开发者：掘金博客-TF男孩\n联系方式：1950278252@qq.com\n官方网址：https://juejin.cn/user/615370768790158\n\n版权说明：掘金参赛作品，仅供交流学习，创意和源码不可商用。"
+			 android:textColor="#fff"
+			android:textSize="@dimen/sp_18"/>
+   		 </LinearLayout>
+</RelativeLayout>
