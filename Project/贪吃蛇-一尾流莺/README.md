@@ -1,7 +1,7 @@
 
 ## 前言
 
-本文将实现一个网页版贪吃蛇小游戏，技术栈选用当前热门的 `Vite` + `Vue3` + `Ts`。
+本仓库将实现一个网页版贪吃蛇小游戏，技术栈选用当前热门的 `Vite` + `Vue3` + `Ts`。
 
 👉👉 [在线试玩](http://game.duwanyu.com/GreedySnake/index.html) 👉👉 [源码地址](https://github.com/alanhzw/warbler-games)
 
@@ -12,11 +12,6 @@
 
 ![未标题-1.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/96f72b09f419428eb3196df2092f705a~tplv-k3u1fbpfcp-watermark.image?)
 
-
-![61.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f6f9d0ceb196419e91b327b4b7d3beda~tplv-k3u1fbpfcp-watermark.image?)
-
-
-![11.gif](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b9890cf853384d229d6bc94ecd900925~tplv-k3u1fbpfcp-watermark.image?)
 
 ## 目录结构
 ```js
