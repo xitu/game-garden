@@ -147,7 +147,7 @@ class Game extends egret.Sprite implements GameInterface {
             let needClearExpressionScore = false
             this.expressionScore += event.data;
             if(this.useTime === 1){
-                if(this.expressionScore >= 50){
+                if(this.expressionScore >= 40){
                     reward = 20
                     SoundManager.getInstance().playLongShoutSound();
                     face.shyness();
@@ -155,14 +155,14 @@ class Game extends egret.Sprite implements GameInterface {
                     this.shakeView(gameView)
                     perfectText.show()
                 }
-                else if(this.expressionScore >= 40){
+                else if(this.expressionScore >= 30){
                     reward = 15
                     SoundManager.getInstance().playShoutSound();
                     face.openMouthAction();
                     this.shakeView(gameView)
                     goodText.show()
                 }
-                else if(this.expressionScore >= 30){
+                else if(this.expressionScore >= 20){
                     reward = 10
                     SoundManager.getInstance().playNiceSound();
                     face.openMouthAction();

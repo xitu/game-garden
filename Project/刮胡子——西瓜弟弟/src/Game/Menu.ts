@@ -108,7 +108,7 @@ class Menu extends egret.Sprite implements MenuInter{
         menu.addChild(author);
 
         author.size = 30;
-        author.text = '作者：低调哥';
+        author.text = '作者：西瓜弟弟';
         author.y = this.stageH / 10 * 9;
         author.width =  this.stageW;
         author.textAlign = egret.HorizontalAlign.CENTER;
