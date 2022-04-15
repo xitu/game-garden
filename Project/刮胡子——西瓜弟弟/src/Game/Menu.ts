@@ -18,18 +18,18 @@ class Menu extends egret.Sprite implements MenuInter{
         const menu:egret.Sprite = new egret.Sprite();
         menu.graphics.drawRect(0,0,this.stageW,this.stageH);
         menu.graphics.endFill();
-        
+
         // 游戏名称按钮
-        var gameName:egret.TextField = new egret.TextField(); 
+        var gameName:egret.TextField = new egret.TextField();
         gameName.textColor = 0x000000;
         gameName.size = 80;
         menu.addChild(gameName);
 
         gameName.width =  this.stageW,
         gameName.height = this.stageH
-        gameName.text = "刮胡子"; 
+        gameName.text = "刮胡子";
         gameName.textAlign = egret.HorizontalAlign.CENTER;
-        
+
         gameName.anchorOffsetX = this.stageW/2;
 
         gameName.x = this.stageW/2;
@@ -92,7 +92,7 @@ class Menu extends egret.Sprite implements MenuInter{
         rankBtn.textColor = 0x000000;
         rankBtn.touchEnabled = true;
         buttons.addChild(rankBtn);
-        musicBtn.size = 35;
+        rankBtn.size = 35;
         rankBtn.width =  400;
         rankBtn.text = '排行榜';
         rankBtn.y = 260;
@@ -187,7 +187,7 @@ class Menu extends egret.Sprite implements MenuInter{
         mask.graphics.endFill();
 
         // 绘制关于视图
-        const aboutView:egret.Sprite = new egret.Sprite(); 
+        const aboutView:egret.Sprite = new egret.Sprite();
         aboutView.graphics.lineStyle(5,0x000000);
         aboutView.graphics.beginFill(0xffffff);
         aboutView.graphics.drawRoundRect(0,0,500,500,20,20);
@@ -195,7 +195,7 @@ class Menu extends egret.Sprite implements MenuInter{
         aboutView.y = this.stageH/2 - 500/2;
         aboutView.graphics.endFill();
 
-        const closeAbout:egret.Sprite = new egret.Sprite(); 
+        const closeAbout:egret.Sprite = new egret.Sprite();
         closeAbout.graphics.lineStyle(5,0x000000);
         closeAbout.graphics.beginFill(0xffffff);
         closeAbout.graphics.drawCircle(0,0,30);
