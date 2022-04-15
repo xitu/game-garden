@@ -13,12 +13,6 @@
 
 # 体验方式
 ## 下载和安装
-### 方式一：
-到同级目录下寻找apk安装包，下载后，安装到安卓4.4及其以上版本的智能手机即可使用。
-  当前目录 bingjiangqi.apk
-  其他目录 HelloAndroid/app/release/bingjiangqi.apk
-  
-### 方式二：
 百度网盘下载apk安装包后，安装到安卓4.4及其以上版本的智能手机即可使用。
 下载链接: https://pan.baidu.com/s/1q2_GSfM2SM8KRemcAoUSew?pwd=shbx 提取码: shbx
 
