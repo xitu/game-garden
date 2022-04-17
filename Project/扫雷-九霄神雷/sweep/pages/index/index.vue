@@ -1,9 +1,12 @@
 <template>
+	<view class="wraper">
+		
 	<view class="content">
-	                    	<text>选择难度</text>
-		<navigator class="title" url="/pages/play/play?degree=0">入门</navigator>
-		<navigator class="title" url="/pages/play/play?degree=1">简单</navigator>
-		<navigator class="title" url="/pages/play/play?degree=2">一般</navigator>
+	    <text class="title">选择难度</text>
+		<navigator class="degree indoor" url="/pages/play/play?degree=0">入门</navigator>
+		<navigator class="degree easy"   url="/pages/play/play?degree=1">简单</navigator>
+		<navigator class="degree normal" url="/pages/play/play?degree=2">一般</navigator>
+	</view>
 	</view>
 </template>
 
@@ -11,7 +14,7 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+			
 			}
 		},
 	
@@ -25,30 +28,44 @@
 </script>
 
 <style>
+	@keyframes wave{
+		from{background-position: 0 0;}
+		to{background-position: 0 100vh;}
+	}
 	.content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		height: 100vh;
+		row-gap:10px ;
+		font-family: 楷体;
+		background:repeating-linear-gradient(32deg,#a27943a0 , #a27943 1px, #8a5c2b ,#a47b47 19px ,#a47b47a0 23px);
+		animation: wave 50s 0s infinite linear;
+		padding-top: 20vh;
+		height: 10000vh;
 	}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
 
-	.text-area {
-		display: flex;
-		justify-content: center;
+	.degree {
+		border-radius: 50%;
+		padding: 10px 20px;
+		font-size: 10vw;
+		background: radial-gradient(#debf0766, #f0f0);
 	}
-
+	.degree:active {
+		background: radial-gradient(#000a, #f0f0);
+	}
 	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
+		font-size: 14vw;
+		color: #0e8fea;
 	}
+	.indoor {
+		color: #4CD964;
+	}
+	.easy {
+		color: #1734c5;
+	}
+	.normal {
+		color: #f0f;
+	}
+	.wraper{ overflow: hidden;height: 100vh;}
 </style>

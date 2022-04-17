@@ -4,6 +4,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+	font-family: 宋体;
 }
 .contentMap {
 	width: 100%;
@@ -31,16 +32,25 @@
 	width: 60rpx;
 	height: 60rpx;
 	background-color: #d5d5d5;
-	border: #9a9a9a solid 1px;
+	border: #9a9a9a solid 2px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 .mask{
-	background-color: #e6e6e6;
-	box-shadow: 2px 2px 5px 5px #bcbcbc inset;
-	border: #8d8d8d solid 1px;
+	border:  solid 2px;
+	border-image: linear-gradient(202deg,#bbbb5d,#cff3ce)  2 ;
+}
+button.again{
+	font-family:  华文新魏 ;
+	color:#0000ff ;
+	margin-top: 30px;
+}
+.music { color:#e010c7 ;}
+.del {
+	text-decoration: line-through;
+	color: #ccc;
 }
 image{
 	width: 45rpx;

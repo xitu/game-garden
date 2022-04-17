@@ -1,0 +1,1 @@
+<view style="padding-top:20px;"><saolei vue-id="8f2a4780-1" width="{{width}}" height="{{height}}" boomNum="{{boomNum}}" bind:__l="__l"></saolei></view>

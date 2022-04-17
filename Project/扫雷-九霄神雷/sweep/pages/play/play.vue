@@ -1,7 +1,7 @@
 <template>
-	<view>
-		<saolei :width="width" :height="height" :boomNum="boomNum"></saolei>
-	<view> 再来一局</view>
+	<!-- 最外层的盒子写magin竟然毫无用处 -->
+	<view style="padding-top:20px">
+		<saolei ref="saolei" :width="width" :height="height" :boomNum="boomNum"></saolei>
 	</view>
 	
 </template>
@@ -15,6 +15,16 @@
 			this.width+=(2*degree)
 			this.height+=(2*degree)
 			this.boomNum+=(4*degree)
+		},
+		onHide() {
+			console.log('hide')
+			this.$refs.saolei.pauseDida()
+		},
+		onUnload() {
+		this.$refs.saolei.pauseDida()	
+		console.log('unload')
+		},
+		onShow(){
 		},
 		data() {
 			return {
@@ -33,5 +43,12 @@
 </script>
 
 <style>
-
+	
+.again {
+	margin-top: 40px; 
+	padding: 15px 30px; 
+	border-radius: 30px;
+	font-size: 10vw; 
+	background: ;
+}
 </style>

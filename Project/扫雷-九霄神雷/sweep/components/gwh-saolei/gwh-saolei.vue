@@ -6,6 +6,7 @@
 				<image src="../../static/imgs/smile.png" v-else-if="isGameSuccess"></image>
 				<image src="../../static/imgs/smile2.png" v-else></image>
 			</view>
+			<text :class="{del:quiet}" class="music" @tap="switchMusic()">音效</text>
 			<view>剩余：{{getRestBoomNum()}}</view>
 		</view>
 		<view class="contentMap">
@@ -32,6 +33,8 @@
 				</view>
 			</view>
 		</view>
+		
+		<button v-if="isGameOver" class="again" type="default" v-on:click="initMap()">再来一局</button>
 	</view>
 </template>
 
@@ -46,6 +49,8 @@
 	 * @property {Function} @init 地图初始化监听，返回游戏地图：-1表示雷，0-9表示周围有几个雷
 	 * @property {Function} @result 游戏结束监听, code=0成功，其余失败
 	 * */
+	 
+
 	export default {
 		props:{
 			width:{
@@ -80,10 +85,24 @@
 				isGameOver:false,
 				isGameSuccess:false,
 				lastAction:'',
+				quiet:false
 			};
 		},
+		onShow(){
+
+		},
+		onHide(){
+
+		} ,
+		
 		mounted() {
+			!this.startAudio && this.initMusic()
 			this.initMap()
+			// this.playStart()
+			// this.playDida()
+		},
+		beforeUnmount() {
+			console.log('unmount')
 		},
 		methods:{
 			getRestBoomNum(){
@@ -117,6 +136,7 @@
 				}
 			},
 			initMap(){
+				this.playStart();
 				this.maps = []
 				this.mask = []
 				this.isGameOver = false
@@ -171,6 +191,42 @@
 				}
 				this.$emit('init',{maps:this.maps})
 			},
+			initMusic(){
+				this.startAudio = uni.createInnerAudioContext()
+				this.startAudio.src ='https://vkceyugu.cdn.bspapp.com/VKCEYUGU-3c5dd365-9db5-4687-8b00-e7c4a23710e1/d53274e0-321b-4e55-9ebc-e4dd86ef3e9b.mp3';    ;    // 开场音效
+				this.didaAudio = uni.createInnerAudioContext()
+				this.didaAudio.loop=true;
+				
+				this.didaAudio.src= 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-3c5dd365-9db5-4687-8b00-e7c4a23710e1/edbc4906-940d-4add-b99b-94f014525cdc.mp3'// 氛围音效x
+				
+					// 	启动之后开始氛围渲染
+					this.startAudio.onEnded( ()=>{
+						this.playDida()
+					})
+					
+				
+				this.flagAudio = uni.createInnerAudioContext()
+				this.flagAudio.src='https://vkceyugu.cdn.bspapp.com/VKCEYUGU-3c5dd365-9db5-4687-8b00-e7c4a23710e1/a0a4d7c4-1b53-4554-9e71-7c79844458b8.wav';    // 插旗音效
+				this.boomAudio = uni.createInnerAudioContext()
+				this.boomAudio.src='https://vkceyugu.cdn.bspapp.com/VKCEYUGU-3c5dd365-9db5-4687-8b00-e7c4a23710e1/d9ce405b-9410-4595-939b-7207cb8e2f72.mp3';    // 炸雷音效
+				// 没踩到雷的
+				this.normalAudio = uni.createInnerAudioContext() ;
+				this.normalAudio.src = 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-3c5dd365-9db5-4687-8b00-e7c4a23710e1/4b6ffade-9811-43e6-b378-fefc879e49b9.mp3'
+			},
+			switchMusic(){
+				this.quiet = !this.quiet ;
+				let volume = Number(!this.quiet)
+				this.startAudio.volume = volume  ;
+				this.didaAudio.volume = volume  ;
+				this.flagAudio.volume = volume  ;
+				this.boomAudio.volume = volume  ;
+			},
+			playStart(){ this.startAudio.play()} ,
+			playDida(){ this.didaAudio.play()} ,
+			pauseDida(){ this.didaAudio.pause()} ,
+			playFlag(){ this.flagAudio.play()} ,
+			playBoom(){ this.boomAudio.play()} ,
+			playNormal(){ this.normalAudio.play()} ,
 			setMask(i,j,action){
 				// action 可以是 open 或 mask
 				this.lastAction = action;
@@ -186,6 +242,9 @@
 							}
 						}
 						this.isGameOver = true;
+						this.startAudio.pause() // 有可能片头曲还没完就炸了
+						this.pauseDida()
+						this.playBoom()
 						for (var i=0;i<this.width;i++){
 							for (var j=0;j<this.height;j++){
 								if(this.mask[i][j] == -1 && this.maps[i][j] != -1) this.mask[i][j] = 2;
@@ -195,10 +254,13 @@
 						this.$emit('result', {code:-1, msg:'failed'})
 					}
 					else{
+						this.playNormal() // 先声夺人
 						this.canIOpen(i,j);
+						
 					}
 				}
 				else{
+					this.playFlag()
 					if(this.mask[i][j] == 0)
 						this.mask[i][j] = -1;
 					else if(this.mask[i][j] == -1)
@@ -264,6 +326,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
+		font-family: 宋体;
 	}
 	
 	.contentMap {
@@ -296,7 +359,7 @@
 		width: 60upx;
 		height: 60upx;
 		background-color: #d5d5d5;
-		border: #9a9a9a solid 1px;
+		border: #9a9a9a solid 2px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -304,9 +367,19 @@
 	}
 	
 	.mask{
-		background-color: #e6e6e6;
-		box-shadow: 2px 2px 5px 5px #bcbcbc inset;
-		border: #8d8d8d solid 1px;
+		border:  solid 2px;
+		border-image: linear-gradient(202deg,#bbbb5d,#cff3ce)  2 ;
+	}
+	button.again{
+		font-family:  华文新魏 ;
+		color:#0000ff ;
+		margin-top: 30px;
+		
+	}
+	.music { color:#e010c7 ;}
+	.del {
+		text-decoration: line-through;
+		color: #ccc;
 	}
 	
 	image{

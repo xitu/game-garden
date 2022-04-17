@@ -3,7 +3,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "九霄惊雷"
 			}
 		},
 	
@@ -15,7 +15,19 @@
                 "enablePullDownRefresh": false
             }
             
-        }
+        },
+		{
+		    "path" : "pages/des/des",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "说明",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+       
+            
+        
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
