@@ -10,7 +10,7 @@
 
 请扫码
 
-![二维码](E:\code1\miniprogram\sweep\sweep.jpg)
+![二维码](./sweep/sweep.jpg)
 
 ### 实现细节
 
