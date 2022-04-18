@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="640" height="1136" x="0" y="0" source="bg_png"/>
+	<e:Group id="titleGroup" y="92.51" horizontalCenter="0">
+		<e:Label id="gameName" text="疯狂计算" textColor="0xed540b" size="127" anchorOffsetX="0" width="513.14" anchorOffsetY="0" height="123.97" y="0" horizontalCenter="0"/>
+		<e:Label id="authorName" text="powered by 码中悍刀行" y="158.82" horizontalCenter="0"/>
+		<e:Button id="startBtn" label="开始游戏" scaleX="1" scaleY="1" horizontalCenter="0" top="440"/>
+		<e:Button id="ruleBtn" label="游戏规则" scaleX="1" scaleY="1" horizontalCenter="0" top="510"/>
+		<e:Button id="scoreBtn" label="最高积分" scaleX="1" scaleY="1" horizontalCenter="0" top="580"/>
+		<e:Scroller id="ruleInfo" width="300" height="200" top="215" horizontalCenter="0" scrollPolicyH="off" scrollPolicyV="on" anchorOffsetY="0" visible="false">
+			<e:Group anchorOffsetX="0" width="300" anchorOffsetY="0" height="200">
+				<e:Label text="本游戏主要是进行平方的计算。开始游戏后屏幕中会不停的出现题目，请在规定时间内进行作答。答题完毕根据答题结果将获得不同的积分。题目中存在不同的幸运题目，幸运题目会获得不同的积分。" x="0" y="0" anchorOffsetX="0" width="300" anchorOffsetY="0" height="484"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Label id="currentScoreLabel" width="264.67" height="35.33" top="278" textAlign="center" text="当前积分：0" textColor="0xffff00" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" visible="false"/>
+	</e:Group>
+	<e:Group id="calculateGroup" y="207.67" horizontalCenter="0.5" anchorOffsetY="0" height="363.33" visible="false">
+		<e:TextInput id="inputResult" width="200" height="80" prompt="请输入计算结果" left="0" top="211"/>
+		<e:Button id="submitBtn" label="提交" left="247" top="226"/>
+		<e:Label id="questionLabel" text="" scaleX="1" scaleY="1" anchorOffsetX="0" width="192.96" anchorOffsetY="0" height="30" textAlign="center" horizontalCenter="0" top="130"/>
+		<e:Label id="scoreLabel" text="当前积分：0" scaleX="1" scaleY="1" anchorOffsetX="0" width="192.96" anchorOffsetY="0" height="30" textAlign="center" horizontalCenter="0" top="74" textColor="0xffffff"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="640" height="1136" x="0" y="0" scale9Grid="129,170,1558,2946" alpha="1" source="bg2_jpg"/>
+	<e:Group id="titleGroup" y="92.51" horizontalCenter="0" visible="true">
+		<e:Label id="gameName" text="疯狂二次方" textColor="0xed540b" size="100" anchorOffsetX="0" width="513.14" anchorOffsetY="0" height="123.97" y="0" horizontalCenter="0"/>
+		<e:Label id="authorName" text="powered by 码中悍刀行" y="158.82" horizontalCenter="0"/>
+		<e:Button id="startBtn" label="开始游戏" scaleX="2" scaleY="1.5" horizontalCenter="0" top="546"/>
+		<e:Button id="ruleBtn" label="游戏规则" scaleX="2" scaleY="1.5" horizontalCenter="0" top="686"/>
+		<e:Button id="scoreBtn" label="最高积分" scaleX="2" scaleY="1.5" horizontalCenter="0" top="826"/>
+		<e:Scroller id="ruleInfo" width="300" height="250" top="215" horizontalCenter="0" scrollPolicyH="off" scrollPolicyV="on" anchorOffsetY="0" visible="false">
+			<e:Group anchorOffsetX="0" width="300" anchorOffsetY="0" height="250">
+				<e:Label text="本游戏主要是进行平方的计算。开始游戏后屏幕中会不停的出现题目，请在规定时间内进行作答。答题完毕根据答题结果将获得不同的积分。当持续答题正确时，每题所获积分将增加奖励积分且题目难度会加大。共有三次跳过机会，跳过或回答错误奖励积分将清零重置，题目难度同样会降低为初始值。答题时间到则记录历史最高积分。" x="0" y="0" anchorOffsetX="0" width="300" anchorOffsetY="0" height="484" textColor="0xFFFF00"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Label id="currentScoreLabel" width="264.67" height="35.33" top="278" textAlign="center" text="当前积分：0" textColor="0xffff00" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" visible="false"/>
+	</e:Group>
+	<e:Group id="calculateGroup" y="207.67" horizontalCenter="0.5" anchorOffsetY="0" height="758.554" visible="false">
+		<e:TextInput id="inputResult" width="350" height="80" prompt="请输入计算结果" top="267" horizontalCenter="0.5"/>
+		<e:Button id="submitBtn" label="提交" top="366" horizontalCenter="0.5" scaleX="1.2" scaleY="1.2"/>
+		<e:Button id="passBtn" label="跳过" top="440" horizontalCenter="0.5" x="61" y="320" scaleX="1.2" scaleY="1.2"/>
+		<e:Button id="restartBtn" label="重新开始" top="526" visible="true" scaleX="2" scaleY="1.5" horizontalCenter="0.5"/>
+		<e:Button id="backBtn" label="返回" top="636" visible="true" scaleX="2" scaleY="1.5" horizontalCenter="0"/>
+		<e:Label id="questionLabel" text="" scaleX="1" scaleY="1" anchorOffsetX="0" width="300" anchorOffsetY="0" height="30" textAlign="center" top="130" horizontalCenter="0" size="40"/>
+		<e:Label id="alarmLabel" text="" scaleX="1" scaleY="1" anchorOffsetX="0" width="350" anchorOffsetY="0" height="30" textAlign="center" top="190" y="140" horizontalCenter="0" textColor="0xFF0000" visible="false"/>
+		<e:Label id="scoreLabel" text="当前积分：0" scaleX="1" scaleY="1" anchorOffsetX="0" width="300" anchorOffsetY="0" height="30" textAlign="center" top="74" horizontalCenter="0" textColor="0xffff00" size="40"/>
+		<e:Label id="timeLabel" text="剩余时间：60" scaleX="1" scaleY="1" anchorOffsetX="0" width="200" anchorOffsetY="0" height="30" textAlign="center" top="14" horizontalCenter="0" textColor="0xffffff"/>
+	</e:Group>
+</e:Skin>
