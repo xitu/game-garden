@@ -18,4 +18,8 @@
 
 ## 项目实践细节
 
-[汉林：使用uniapp来实现wordle，来看看成语你能猜对几分](https://juejin.cn/post/7087892845998604319)
+大帅老猿：[用uni-app开发一个名为汉兜的游戏](https://juejin.cn/post/7088014643800571918)
+
+是天狗呀：[使用uniapp实现双简版本wordle](https://juejin.cn/post/7087938140446392357)
+
+Warn：[汉林：使用uniapp来实现wordle，来看看成语你能猜对几分](https://juejin.cn/post/7087892845998604319)
