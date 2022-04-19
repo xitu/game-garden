@@ -1,0 +1,50 @@
+// 背景图片
+@mixin bg-image($url) {
+	background-image: url($url+'@2x.png');
+	@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+		background-image: url($url+'@3x.png');
+	}
+}
+
+@mixin bg-img($url) {
+	background-image: url('../images/#{$url}');
+}
+
+// 禁止折行
+@mixin no-wrap() {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+// 多行溢出隐藏
+@mixin more-wrap($line) {
+	display: -webkit-box;
+	overflow: hidden;
+	word-break: break-all;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $line;
+}
+
+// 扩展小图标按钮的点击区域
+@mixin extend-click() {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -10px;
+		left: -10px;
+		right: -10px;
+		bottom: -10px;
+	}
+}
+
+// flex布局
+@mixin we-flex($direction: row, $main: space-around, $cross: center) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $main;
+	align-items: $cross;
+}
