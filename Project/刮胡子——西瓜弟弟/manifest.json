@@ -1,0 +1,26 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/physics/physics.js"
+	],
+	"game": [
+		"bin-debug/Game/Face.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/Main.js",
+		"bin-debug/Platform.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/Game/Beards.js",
+		"bin-debug/Loading.js",
+		"bin-debug/Game/Game.js",
+		"bin-debug/Game/Menu.js",
+		"bin-debug/Game/Rank.js",
+		"bin-debug/HTTP/HTTP.js",
+		"bin-debug/Manager/SoundManager.js",
+		"bin-debug/Manager/Utils.js"
+	]
+}
