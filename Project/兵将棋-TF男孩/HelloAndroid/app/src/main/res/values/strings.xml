@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">兵将棋</string>
+    <string name="hello_world">兵将棋</string>
+    <string name="menu_settings">Settings</string>
+    <string name="init_wrong">初始化数据错误，请退出后重新进入！</string>
+    <string name="notice">提示</string>
+    <string name="isloading">正在加载数据...</string>
+    <string name="siglegame">单人游戏</string>
+    <string name="multiplegame">多人游戏</string>
+    <string name="newgame">新局</string>
+    <string name="regret">悔棋</string>
+    <string name="set">设置</string>
+</resources>
