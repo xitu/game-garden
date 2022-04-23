@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>掘金大冒险</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <ul>
+        <li>
+            <div class="grid-content r-yoyo">
+                <div class="head-box">
+                    <img src="./assets/img/r-yoyo.jpg" alt="">
+                </div>
+                <div class="start-button" onclick="startGame(1)"></div>
+                <div class="introduce first">
+                    <img src="./assets/img/intro.png" alt="">
+                    游戏介绍
+                    <p class="intro-content">只能吃掉GHOST哦，千万别吃蘑菇！</p>
+                </div>
+                <div class="introduce">
+                    <img src="./assets/img/operation.png" alt="">
+                    操作指南
+                    <p class="intro-content">鼠标操控</p>
+                </div>
+                <div class="introduce">
+                    <img src="./assets/img/end.png" alt="">
+                    游戏目标
+                    <p class="intro-content">操控YOYO吃掉所有的GHOST</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="middle grid-content s-hawking">
+                <div class="head-box">
+                    <img src="./assets/img/s-hawking.jpg" alt="">
+                </div>
+                <div class="start-button" onclick="startGame(2)"></div>
+                <div class="introduce first">
+                    <img src="./assets/img/intro.png" alt="">
+                    游戏介绍
+                    <p class="intro-content">SUPER HAWKING，看看你能闯到第几关？</p>
+                </div>
+                <div class="introduce">
+                    <img src="./assets/img/operation.png" alt="">
+                    操作指南
+                    <p class="intro-content">我相信你肯定玩过超级马里奥</p>
+                </div>
+                <div class="introduce">
+                    <img src="./assets/img/end.png" alt="">
+                    游戏目标
+                    <p class="intro-content">尝试我设计的所有新鲜玩法</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="grid-content f-click">
+                <div class="head-box">
+                    <img src="./assets/img/f-click.jpg" alt="">
+                </div>
+                <div class="start-button" onclick="startGame(3)"></div>
+                <div class="introduce first">
+                    <img src="./assets/img/intro.png" alt="">
+                    游戏介绍
+                    <p class="intro-content">Just keep click</p>
+                </div>
+                <div class="introduce">
+                    <img src="./assets/img/operation.png" alt="">
+                    操作指南
+                    <p class="intro-content">疯狂点击鼠标或者空格键</p>
+                </div>
+                <div class="introduce">
+                    <img src="./assets/img/end.png" alt="">
+                    游戏目标
+                    <p class="intro-content">操纵click尽可能飞的更久，穿过更多的管道</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</body>
+<script>
+    function startGame(n) {
+        switch (n) {
+            case 1:
+                window.open("https://biao-code.github.io/magic-game/game/eat-yoyo.html");
+                break;
+            case 2:
+                window.open("https://biao-code.github.io/magic-game/game/super-hawking.html");
+                break;
+            case 3:
+                window.open("https://biao-code.github.io/magic-game/game/flappy-click.html");
+                break;
+        }
+    }
+</script>
+<style>
+    html,body,ul{
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    li {
+        display: inline-block;
+        height: 100%;
+        flex: 1;
+    }
+
+    .grid-content {
+        margin: 30px 40px;
+        padding-top: 20px;
+        height: calc(100vh - 80px);
+        background-color: #FFFFCC;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .head-box {
+        width: calc(100% - 40px);
+        margin: 0 20px 20px 20px;
+        background-color: #f5f5f5;
+    }
+    .head-box img{
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .start-button {
+        margin: auto;
+        width: 50%;
+        height: 8%;
+        background-image: url('./assets/start.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .start-button:hover {
+        background-image: url('./assets/start_hover.png');
+    }
+    .introduce{
+        font-size: 18px;
+        font-weight: 900;
+        color: #7187f6;
+        text-align: left;
+        margin-left: 20px;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+    .intro-content{
+        padding: 20px 0;
+    }
+    .introduce.first{
+        color: #ff7c48;
+    }
+    .introduce:last-child{
+        color: #5adfb0;
+    }
+    .introduce img{
+        width: 18px;
+        height: auto;
+        vertical-align: middle;
+    }
+    .introduce p{
+        margin: 5px 0 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgb(116, 127, 146);
+        margin-left: 40px;
+    }
+</style>
+
+</html>
