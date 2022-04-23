@@ -3,6 +3,8 @@
 
 在线demo: [github pages](https://sci233.github.io/snake/) , [gitee pages](https://sci233.gitee.io/snake/)
 
+实践细节：[来做一个能吃满屏幕的贪吃蛇吧](https://juejin.cn/post/7089770929701519397)
+
 截图预览:
 
 ![](https://cdn.jsdelivr.net/gh/SCi233/FigureBed/img/202202202323719.png)
