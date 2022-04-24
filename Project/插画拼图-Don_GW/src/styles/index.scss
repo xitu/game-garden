@@ -1,0 +1,29 @@
+@import 'normalize.css';
+
+html,
+body,
+#app {
+  height: 100%
+}
+
+img {
+  vertical-align: bottom;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+  position: relative;
+}

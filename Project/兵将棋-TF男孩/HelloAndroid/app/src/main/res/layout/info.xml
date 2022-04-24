@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/dp_10"
+    android:background="@drawable/game_bg">
+    <ScrollView android:layout_width="fill_parent"
+        android:scrollbars="none"
+	    android:layout_height="wrap_content">
+        <LinearLayout 
+      	android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:paddingBottom="@dimen/dp_10"
+        >
+        	<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="@dimen/sp_20"
+		    android:textColor="#fff"
+		    android:layout_gravity="center"
+		    android:text="游戏说明"/>
+	        <TextView 
+		    android:id="@+id/tv"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="\n“兵将棋”源于山东民间棋牌游戏，是乡村闲暇之时最受欢迎的棋牌游戏之一。农闲之时，众人齐聚大街之上，以石为凳以地为盘，其乐无穷。\n"
+		    android:textColor="#fff"
+				android:textSize="@dimen/sp_18"/>
+	        <ImageView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:src="@drawable/bg"/>
+	        <TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="现作者对其进行整理，根据此棋的特点重新命名为“兵将棋”。兵者，难敌将，只能采用人海战术，把将包围住即可胜利。将者，武艺高强，手持利刃远可斩兵，歼灭兵为赢，然近却施展不开，有被兵包围的危险。此棋是中国农民智慧的结晶，融合了中国传统的“大”与“小”的辩证思想。虽然简单几个棋子，但是其中可有千万种变化，可施展无数战术，内涵绝不逊于围棋象棋之属。"
+		    android:textColor="#fff"
+				android:textSize="@dimen/sp_18"/>
+	        <TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="\n现介绍其规则如下：\n 一、将（白棋）正常每次可走一格，不可跳跃任一方棋子，如果与兵（黑棋）隔一空格即可吃掉兵（黑棋），吃光为赢。被兵（黑棋）困住无路可走为输。"
+		    android:textColor="#fff"
+				android:textSize="@dimen/sp_18"/>
+	        
+        	<ImageView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:src="@drawable/model1"/>
+        	<TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="\n二、兵（黑棋）每次可走一格，不可跳跃任一方棋子，以围堵将（白棋）为目的，把将（白棋）团团堵住为赢，被吃光为输。"
+		    android:textColor="#fff"
+				android:textSize="@dimen/sp_18"/>
+        	<ImageView android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:src="@drawable/model2"/>
+        	<TextView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="\n三、游戏分为单人游戏（人机对战）和多人游戏（人人对战），角色可选。游戏没有时间限制，游戏进行中，任意时刻可以开始新局，悔棋。一旦游戏结束，悔棋会失效，重新开始游戏方可使用。\n\n"
+		    android:textColor="#fff"
+				android:textSize="@dimen/sp_18"/>
+        	
+    	</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

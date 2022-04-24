@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Snake</title>
+  <style>
+    body, div, canvas {
+      margin: 0;
+      border: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: DarkSeaGreen;
+    }
+
+    .main-content {
+      display: block;
+      margin: 2vh auto 0;
+      color: DarkRed;
+      font-weight: bold;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .horizontal {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .btn-ctrl {
+      margin-right: 2vw;
+      border: 2px solid DarkRed;
+      border-radius: 3px;
+      background-color: DarkGoldenRod;
+      color: white;
+      font-weight: bold;
+    }
+    @media (hover) {
+      .btn-ctrl:hover {
+        background-color: DarkRed;
+      }
+    }
+    .btn-ctrl:active {
+      background-color: DarkGoldenRod;
+    }
+    .btn-ctrl:disabled {
+      background-color: darkgray;
+      border-color: gray;
+    }
+    .btn-ctrl-enable {
+      background-color: DarkRed;
+    }
+
+    #ctrl-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .btn-dash {
+      width: 48px;
+      height: 48px;
+      margin-top: 8px;
+      border: 2px solid DarkRed;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: DarkGoldenRod;
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 48px;
+    }
+
+    .btn-joystick {
+      width: 48px;
+      height: 48px;
+      border: 2px solid DarkRed;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: DarkGoldenRod;
+      color: white;
+    }
+    @media (hover) {
+      .btn-dash:hover,.btn-joystick:hover {
+        background-color: DarkRed;
+      }
+    }
+    .btn-dash:active,.btn-joystick:active {
+      background-color: DarkGoldenRod;
+    }
+    .btn-dash:disabled,.btn-joystick:disabled {
+      background-color: darkgray;
+      border-color: gray;
+    }
+
+    .triangle-up {
+      width: 0;
+      height: 0;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid White;
+      border-left: 5px solid transparent;
+    }
+    .triangle-right {
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 10px solid White;
+    }
+    .triangle-down {
+      width: 0;
+      height: 0;
+      border-top: 10px solid White;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+    }
+    .triangle-left {
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-right: 10px solid White;
+      border-bottom: 5px solid transparent;
+    }
+
+    .joystick {
+      width: 160px;
+      height: 160px;
+    }
+    .joystick>.horizontal {
+      justify-content: space-between;
+    }
+    .joystick>.joystick-up,.joystick-down {
+      margin-left: 56px;
+      margin-bottom: 8px;
+    }
+    .joystick>.joystick-up,.joystick-down {
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="status-bar" class="horizontal main-content"></div>
+    <canvas id="main-canvas" class="main-content"></canvas>
+    <div id="tool-bar" class="horizontal main-content">
+      <button id="btn-restart" class="btn-ctrl">Restart</button>
+      <button id="btn-pause" class="btn-ctrl">Pause</button>
+      <button id="btn-ai" class="btn-ctrl">AI</button>
+    </div>
+    <div id="tips-bar" class="main-content hidden">Move: wasd or ↑→↓←, Dash: space</div>
+    <div id="ctrl-bar" class="horizontal main-content hidden">
+      <div class="space"></div>
+      <button id="btn-dash" class="btn-dash">
+        Dash
+      </button>
+      <div id="joystick" class="joystick">
+        <button id="btn-joystick-up" class="btn-joystick joystick-up">
+          <div class="triangle-up"></div>
+        </button>
+        <div class="horizontal">
+          <button id="btn-joystick-left" class="btn-joystick joystick-left">
+            <div class="triangle-left"></div>
+          </button>
+          <button id="btn-joystick-right" class="btn-joystick joystick-right">
+            <div class="triangle-right"></div>
+          </button>
+        </div>
+        <button id="btn-joystick-down" class="btn-joystick joystick-down">
+          <div class="triangle-down"></div>
+        </button>
+      </div>
+      <div class="space"></div>
+    </div>
+  </div>
+</body>
+</html>

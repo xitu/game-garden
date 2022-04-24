@@ -1,0 +1,11 @@
+Model Information:
+* title:	Game pirate adventure map
+* source:	https://sketchfab.com/3d-models/game-pirate-adventure-map-696dfa212fda4240817615bdccb373d0
+* author:	noyou (https://sketchfab.com/zsm123)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Game pirate adventure map" (https://sketchfab.com/3d-models/game-pirate-adventure-map-696dfa212fda4240817615bdccb373d0) by noyou (https://sketchfab.com/zsm123) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

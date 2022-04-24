@@ -1,0 +1,33 @@
+{
+  "engineVersion": "5.4.1",
+  "compilerVersion": "5.4.1",
+  "template": {},
+  "target": {
+    "current": "web"
+  },
+  "modules": [
+    {
+      "name": "egret"
+    },
+    {
+      "name": "eui"
+    },
+    {
+      "name": "assetsmanager"
+    },
+    {
+      "name": "tween"
+    },
+    {
+      "name": "promise"
+    }
+  ],
+  "eui": {
+    "exmlRoot": [
+      "resource/eui_skins"
+    ]
+  },
+  "vivo": {
+    "usePlugin": true
+  }
+}
