@@ -6,7 +6,7 @@
 
 ## 如何快速体验
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4f51bc9eddbb43dc972f2e7fd5cd66d0~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](../../../markdown-archive/images/fe26f2814cd64f468f7607f7610b0f16tplv-k3u1fbpfcp-watermark.image)
 
 演示地址：https://tower-defense-mancuoj.vercel.app
 
