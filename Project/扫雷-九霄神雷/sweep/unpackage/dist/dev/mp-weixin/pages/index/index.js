@@ -136,7 +136,8 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
 //
 //
 //
@@ -153,13 +154,26 @@ var _default =
   data: function data() {
     return {};
 
-
   },
-
   onLoad: function onLoad() {
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    showList: function showList() {
+      uni.showActionSheet({
+        itemList: ['入门', '简单', '一般'],
+        success: function success(res) {
+          // console.log('选中了第' + (res.tapIndex + 1) + '个按钮');
+          uni.navigateTo({
+            url: "/pages/play/play?degree=".concat(res.tapIndex) });
+
+        },
+        fail: function fail(res) {
+          console.log(res.errMsg);
+        } });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 18 */

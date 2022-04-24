@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/play/play"
+    "pages/play/play",
+    "pages/des/des"
   ],
   "subPackages": [],
   "window": {

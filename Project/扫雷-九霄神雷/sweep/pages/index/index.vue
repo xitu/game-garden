@@ -1,28 +1,40 @@
 <template>
-	<view class="wraper">
-		
 	<view class="content">
-	    <text class="title">选择难度</text>
-		<navigator class="degree indoor" url="/pages/play/play?degree=0">入门</navigator>
+     <view class="action-box">
+       <navigator class="degree indoor" url="/pages/play/play?degree=0"></navigator>
+       <view class="degree indoor" style="margin-top:49px;" @click="showList"></view>
+     </view>
+<!--		<navigator class="degree indoor" url="/pages/play/play?degree=0">入门</navigator>
 		<navigator class="degree easy"   url="/pages/play/play?degree=1">简单</navigator>
 		<navigator class="degree normal" url="/pages/play/play?degree=2">一般</navigator>
-	</view>
-	</view>
+	-->
+  </view>
 </template>
 
 <script>
 	export default {
 		data() {
 			return {
-			
 			}
 		},
-	
 		onLoad() {
 
 		},
 		methods: {
-
+      showList(){
+        uni.showActionSheet({
+          itemList: ['入门', '简单', '一般'],
+          success: function (res) {
+            // console.log('选中了第' + (res.tapIndex + 1) + '个按钮');
+            uni.navigateTo({
+              url: `/pages/play/play?degree=${res.tapIndex}`
+            });
+          },
+          fail: function (res) {
+            console.log(res.errMsg);
+          }
+        });
+      }
 		}
 	}
 </script>
@@ -33,39 +45,24 @@
 		to{background-position: 0 100vh;}
 	}
 	.content {
+    position:relative;
+    z-index:1;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		row-gap:10px ;
-		font-family: 楷体;
-		background:repeating-linear-gradient(32deg,#a27943a0 , #a27943 1px, #8a5c2b ,#a47b47 19px ,#a47b47a0 23px);
-		animation: wave 50s 0s infinite linear;
-		padding-top: 20vh;
-		height: 10000vh;
+		height: 100vh;
+    width:100vw;
+    background-size: 100% 100%;
+    background-image: url('https://vkceyugu.cdn.bspapp.com/VKCEYUGU-7df26cc2-27b5-45d1-bfb4-6fe6fd486dd3/8662a03a-99ff-4b39-9263-7d1b28ef657e.jpg');
 	}
-
-
-	.degree {
-		border-radius: 50%;
-		padding: 10px 20px;
-		font-size: 10vw;
-		background: radial-gradient(#debf0766, #f0f0);
-	}
-	.degree:active {
-		background: radial-gradient(#000a, #f0f0);
-	}
-	.title {
-		font-size: 14vw;
-		color: #0e8fea;
-	}
-	.indoor {
-		color: #4CD964;
-	}
-	.easy {
-		color: #1734c5;
-	}
-	.normal {
-		color: #f0f;
-	}
-	.wraper{ overflow: hidden;height: 100vh;}
+  .action-box {
+      position:fixed;
+      top: 48%;
+      left: 21%;
+      width: 230px;
+   }
+  .degree {
+    height: 40px;
+  }
 </style>

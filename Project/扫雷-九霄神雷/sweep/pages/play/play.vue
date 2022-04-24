@@ -1,7 +1,7 @@
 <template>
 	<!-- 最外层的盒子写magin竟然毫无用处 -->
-	<view style="padding-top:20px">
-		<saolei ref="saolei" :width="width" :height="height" :boomNum="boomNum"></saolei>
+	<view class="wrapper">
+		<saolei style="margin-top:128px;" ref="saolei" :width="width" :height="height" :boomNum="boomNum"></saolei>
 	</view>
 	
 </template>
@@ -43,12 +43,11 @@
 </script>
 
 <style>
-	
-.again {
-	margin-top: 40px; 
-	padding: 15px 30px; 
-	border-radius: 30px;
-	font-size: 10vw; 
-	background: ;
+.wrapper {
+  height: 100vh;
+  width:100vw;
+  background-attachment:fixed;
+  background-position: center 190% ;
+  background-image: url('https://vkceyugu.cdn.bspapp.com/VKCEYUGU-7df26cc2-27b5-45d1-bfb4-6fe6fd486dd3/8662a03a-99ff-4b39-9263-7d1b28ef657e.jpg');
 }
 </style>
