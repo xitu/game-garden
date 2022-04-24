@@ -1,0 +1,34 @@
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no" />
+	<title>我的数独我做主 - 掘金 - 南方者</title>
+	<link rel="Stylesheet" type="text/css" href="sudoku.css" />
+</head>
+
+<body>
+	<div style="text-align: center;">
+		<h1>我的数独我做主</h1>by <a target="_blank" href="https://juejin.cn/user/2840793779295133/posts">掘金-南方者</a>
+		<div id="sudoku-body">
+			<div class="btn-group">
+				<div style="display: block;" id="createShow">
+					<button onclick="sd.createSudoku();">创建数独</button>
+				</div>
+				<div style="display: none;" id="runningShow">
+					<button onclick="sd.checkRes();">完成</button>
+					<button onclick="sd.reset();">重新开始</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://javadoc.nanfangzhe.cn/jquery.min.js"></script>
+	<script src="sudoku.js"></script>
+	<script>
+		var sd = new SD;
+		sd.init();
+	</script>
+</body>
+
+</html>

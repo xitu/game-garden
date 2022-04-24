@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抓船长 - 掘金 - 南方者</title>
+    <script src="https://javadoc.nanfangzhe.cn/jquery.min.js"></script>
+</head>
+<style>
+    #catch-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0px;
+    }
+
+    .td {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        background-size: cover;
+    }
+
+
+    .btn {
+        border: 1px solid;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 10px 20px;
+        font-weight: 300;
+    }
+
+    .one {
+        color: #b9e769;
+    }
+
+    .two {
+        color: #f04c4c;
+    }
+
+
+    .btn:hover {
+        color: white;
+        border: 0;
+    }
+
+    .one:hover {
+        background-color: #b9e769;
+        -webkit-box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+        -moz-box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+        box-shadow: 10px 10px 99px 6px rgba(185, 231, 105, 1);
+    }
+
+    .two:hover {
+        background-color: #f04c4c;
+        -webkit-box-shadow: 10px 10px 99px 6px #f04c4c;
+        -moz-box-shadow: 10px 10px 99px 6px #f04c4c;
+        box-shadow: 10px 10px 99px 6px #f04c4c;
+    }
+</style>
+
+<body>
+
+    <div style="text-align: center;">
+        <h1>抓船长</h1>by <a target="_blank" href="https://juejin.cn/user/2840793779295133/posts">掘金-南方者</a>
+        <div id="catch-body">
+        </div>
+        <div>
+            <div style="padding-bottom: 15px;">
+                <div>当前分数：<span id="result" style="font-weight: bold;">0</span></div>
+                <div>当前模式：<span id="gameType" style="font-weight: bold;">滑入模式</span></div>
+            </div>
+            <div>
+                <a class="btn one" onclick="bindType(this)" data-value="1">切换模式</a>
+                <a class="btn two" id="gameStart" onclick="start()">开始游戏</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./catch-captain.js">
+</script>
+
+</html>
