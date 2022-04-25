@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#container{
+    margin-left: 400px;
+    margin-top: 200px;
+    height: 360px;
+    width: 360px;
+    float: left;
+}
+ .left{
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 240px;
+    float: left;
+}
+ .left .copy{
+    margin-left: 100px;
+}
+ .old{
+    height: 240px;
+    width: 240px;
+}
+a.start1 img{
+    height: 100px;
+    width: 100px;
+    margin-left: 60px;
+}
+a.start2 img{
+    height: 100px;
+    width: 100px;
+    margin-left: 60px;
+}
+a.start3 img{
+    height: 100px;
+    width: 100px;
+    margin-left: 60px;
+}
+.active{
+    border:5px solid blue；
+}
