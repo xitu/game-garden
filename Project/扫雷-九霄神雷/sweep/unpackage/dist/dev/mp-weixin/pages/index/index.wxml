@@ -1,0 +1,1 @@
+<view class="content"><view class="action-box"><navigator class="degree indoor" url="/pages/play/play?degree=0"></navigator><view data-event-opts="{{[['tap',[['showList',['$event']]]]]}}" class="degree indoor" style="margin-top:49px;" bindtap="__e"></view></view></view>
