@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.startPage{
+    width: 100%;
+    z-index: 999;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.startBtn{
+    background-image: url('../images/startGame.png');
+    height: 170px;
+    width: 200px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    /* display: none; */
+    
+}
+
+.wrapper{
+    width: 100%;
+    height: 1000px;
+    background-image: url('../images/bg.png');
+    /* background-repeat: no-repeat; */
+    background-size: 100% 100%;
+    position: relative;
+   
+}
+.left-side{
+    width: 24%;
+    position: absolute;
+    height: 1000px;
+    
+}
+.left-side img{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.main{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 90%;
+    /* border: 1px solid red; */
+   
+
+}
+.header{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+.score{
+    line-height: 80px;
+    color: #ddd;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+.content{
+    position: absolute;
+    width: 75.5%;
+    height: 56.9%;
+    left: 16.4%;
+    top: 29.3%;
+    /* border: 1px solid red; */
+}
+.food{
+    background-image: url('../images/bingdu.png');
+    background-size: 100% 100%;
+    z-index: 1000;
+}
+.head{
+    background-image: url('../images/head.png');
+    background-size: 100% 100%;
+    z-index: 1000;
+}
+.body{
+    background-image: url('../images/body.png');
+    background-size: 100% 100%;  
+}
+.loser{
+    display: none;
+    position: 100%;
+    height: 1000px;
+    top: 0;
+    left: 0;
+}
+.con{
+    background-image: url('../images/startP.jpg');
+    background-size:100% 100%;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+}
+.loserScore{
+    display: block;
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    top: 42%;
+    left: 40%;
+    color: #222;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.close{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    background-image: url('../images/closeBtn.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn span{
+    position: absolute;
+    width: 400px;
+    height: 0.1px;
+    /* border: 1px solid; */
+    display: block;
+    color : white;
+    text-align: center;
+    /* 文字居中 */
+    text-decoration: none;
+    /* 去除下划线 */
+    text-transform: uppercase;
+    /* 转换为大写 */
+    line-height: 100px;
+    /* 垂直居中 */
+    font-size: 24px;
+    border-radius: 50px;
+    /* 设置圆角 */
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    /* 设置渐变颜色 */
+    background-size:400%;
+    position: relative;
+    /* 相对定位，因为伪元素要进行绝对定位，这里设置成相对定位作为参考 */
+    z-index:1;
+    cursor: pointer;
+    animation: bright 7s infinite alternate;
+}
+
+/* 下面书写发光效果，利用伪元素来制作 */
+.btn span::before{
+    content: '';
+    width: 400px;
+    height: 100px;
+    background-image: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+    background-size:400%;
+    /* 通过滤镜来设置发光效果 */
+    filter:blur(20px);
+    z-index: -1;
+    cursor: pointer;
+    animation: bright 7s infinite alternate;
+    /* 让发光的盒子到下面去 */
+}
+
+/* 定义动画 */
+@keyframes bright{
+    100%{
+        background-position: -400% 0;
+    }
+}

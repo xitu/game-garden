@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
+    <script type="text/javascript" src="/js/mobile.js"></script>
+    <script type="text/javascript" src="/js/fastclick.js"></script>
+</head>
+
+<body>
+    <div class="canvas-container">
+        <canvas id="stage"></canvas>
+        <div class="ctrl-layer"></div>
+        <div class="mask-layer"></div>
+        <div class="join-box">
+            <h2>欢迎加入百瓶聊天室</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper role-list">
+
+                </div>
+            </div>
+            <input type="text" placeholder="输入昵称" id="inp-join">
+            <button id="btn-join">加入</button>
+        </div>
+        <ul class="chat-list"></ul>
+    </div>
+    <div class="chat-input-box">
+        <input type="text" id="chat">
+        <div class="emit-btn">发送</div>
+    </div>
+
+    <div class="gb-container" style="display:none">
+        <div class="direction-ctrl">
+            <div class="ctrl-item up"></div>
+            <div class="ctrl-item bottom"></div>
+            <div class="ctrl-item left"></div>
+            <div class="ctrl-item right"></div>
+        </div>
+        <div class="action-ctrl">
+            <div class="ctrl-item B"></div>
+            <div class="ctrl-item A"></div>
+        </div>
+    </div>
+
+    <input type="text" style="opacity:0" id="jiaodian">
+    <script src="/js/socket.io.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="//libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/keyboard.min.js"></script>
+    <script type="text/javascript" src="/js/draw.js"></script>
+</body>
+
+</html>
